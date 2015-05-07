@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script id="shader-vt" type="x-shader/x-vertex">
+    attribute vec3 aVertexPosition;
+    void main(void) {
+      gl_Position = vec4(aVertexPosition, 1.0);
+    }
+  </script>
+  <script id="shader-fg" type="x-shader/x-fragment">
+    void main(void) {
+      gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+    }
+  </script>
+</head>
+<body>
+  <canvas id="glc"></canvas>
+  <script src="step1.js"></script>
+</body>
+</html>
